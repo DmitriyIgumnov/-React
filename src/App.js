@@ -1,14 +1,14 @@
 import logo from "./logo.svg";
 import "./App.css";
 
-const date = new Date()
-const year = date.getFullYear()
+const date = new Date() // императивный подход
+const year = date.getFullYear() // императивный подход
 
-export const App = () => {
+export const App = () => { 
 	return (
-		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
+		<div className="App"> {/* делкларативный подход */}
+			<header className="App-header"> {/* делкларативный подход */}
+				<img src={logo} className="App-logo" alt="logo" /> {/* делкларативный подход */}
 				<p>
 					Edit <code>src/App.js</code> and save to reload.
 				</p>
@@ -19,8 +19,8 @@ export const App = () => {
 					rel="noopener noreferrer"
 				>
 					Learn React
-				</a>
-				<div> {year} </div>
+				</a> {/* императивный подход */}
+				<div> {year} </div>  {/* делкларативный подход */}
 			</header>
 		</div>
 	);
